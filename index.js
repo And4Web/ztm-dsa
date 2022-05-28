@@ -43,6 +43,18 @@ function checkCommonItem2(arr1, arr2) {
   }
   return false;
 }
-console.log(checkCommonItem2(array1, array2));
-console.log(checkCommonItem2(array3, array2));
-console.log(checkCommonItem2(array1, array3));
+// console.log(checkCommonItem2(array1, array2));
+// console.log(checkCommonItem2(array3, array2));
+// console.log(checkCommonItem2(array1, array3));
+
+//solution3:
+//solution3:
+
+//using javascript built in methods some() and includes()
+
+function checkCommonItem3(arr1, arr2) {
+  return arr1.some((item) => arr2.includes(item));
+}
+console.log(checkCommonItem3(array1, array2));
+console.log(checkCommonItem3(array3, array2));
+console.log(checkCommonItem3(array1, array3));
