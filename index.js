@@ -1,7 +1,15 @@
-//O(1) --> constant time
+function printFirstItemThenHalfItSayHi100Times(items) {
+  console.log(items[0]);
 
-const arrName = ["nemo", "anand", "harry"];
-function constantTime(arr) {
-  console.log(arr[0]);
+  var middleIndex = Math.floor(items.length / 2);
+  var index = 0;
+
+  while (index < middleIndex) {
+    console.log(items[index]);
+    index++;
+  }
+
+  for (i = 0; i < 100; i++) {
+    console.log("hi!");
+  }
 }
-constantTime(arrName);
