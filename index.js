@@ -14,20 +14,23 @@ function mergedArray(array1, array2) {
     return array1;
   }
 
-  for (let i = 0; i < array1.length - 1; i++) {
+  for (let i = 0; i < array1.length; i++) {
     let array1Item = array1[i];
+
     let j = 0;
     let array2Item = array2[j];
 
     if (array1Item <= array2Item) {
       mergedArray.push(array1[i]);
-      array1Item = array1[i + 1];
+      // array1Item = array1[i];
+      // console.log(i, mergedArray);
     } else {
       mergedArray.push(array2Item);
       j++;
-      array2Item = array2[j];
+      // array2Item = array2[j];
+      // console.log(j, array2Item);
     }
-    console.log(i, j);
+    // console.log(i, j);
   }
 
   return mergedArray;
