@@ -1,4 +1,4 @@
-// remove constants:
+// (2) remove constants:
 
 function printFirstItemThenHalfItSayHi100Times(items) {
   console.log(items[0]); //---->O(1)

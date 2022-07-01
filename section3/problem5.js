@@ -1,4 +1,4 @@
-//worst case:
+// (1) worst case:
 
 //for example, in the finding Nemo function, we can use "break" statement to stop executing and coming out of the loop to stop the wasteful runtime.
 
