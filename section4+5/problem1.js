@@ -1,5 +1,5 @@
 //problem1: Given 2 arrays, create a function that let's a user know (true/false) whether these two arrays contain any common items.
-//This problem is in secion 4 of the course.
+//This problem is in secion 4 lecture 5 of the course.
 
 //solution1:
 
