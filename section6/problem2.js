@@ -11,6 +11,7 @@ let str1 = "Ananad Shukla";
 //method1(direct, using built in javascript methods):
 
 const reverseString = (str) => str.split("").reverse().join("");
+const reverseString3 = (str) => [...str].reverse().join(""); //using destructuring to split the string.
 
 console.log("using method1: ", reverseString(str1));
 
@@ -33,3 +34,4 @@ function reverseString2(str) {
   return strArray.join("");
 }
 console.log("using method2: ", reverseString2(str1));
+console.log("using method3: ", reverseString3(str1));
