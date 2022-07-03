@@ -1,0 +1,21 @@
+->there are different names of hash tables depending on whichlanguage we are using. in javascript, objects, while in python, dictionaries are type of hash tables. This is the most impotant topic for any coding interview.
+
+
+->hash table is simply a list of key-value pairs.
+
+
+->hash function is a function that generates a unique value of fixed length for each input that it gets. for example md5 hash generator(google it.)
+
+
+->this process of converting an input into a fixed length unique value is called "idempotent".
+
+
+->hash functions also used in cryptography(blockchain).
+
+
+->hash functions are language or framework specific and generally have Big O = O(1).
+
+-> hash table: collision resolution -> read wikipedia page. it's a very common downside with hash tables. hash tables with limited space allot same space to various item which creates collision.
+
+
+-> in ES6, Maps and sets are introduced which can take key of any data type. Maps maintain insertion order. Map store key-value pair while Set only stores keys.

@@ -1,14 +1,8 @@
-//problem3:
-//merge sort: given two sorted arrays, combine/merge them and make one sorted array.
-
-//this problem is demonstrated in section 6 lecture 10.
-
-//Merge sort:
-//method1: using for loop:
 const arr1 = [0, 4, 8, 39, 49];
 const arr2 = [4, 19, 26, 48, 51];
 
-function mergedArray(array1, array2) {
+function mergedArray1(array1, array2) {
+  let t1 = performance.now();
   const mergedArray = [];
   let array1Item = array1[0];
   let array2Item = array2[0];
@@ -35,18 +29,24 @@ function mergedArray(array1, array2) {
       }
     }
   }
+  let t2 = performance.now();
+  console.log(
+    `time taken in execution of the function which uses for loop: ${
+      t2 - t1
+    } milliseconds.`
+  );
   return mergedArray;
 }
 
-console.log("mergedArray1 when arr2 is empty: ", mergedArray(arr1, []));
-console.log("mergedArray1 when arr1 is empty: ", mergedArray([], arr2));
+console.log("mergedArray1 when arr2 is empty: ", mergedArray1(arr1, []));
+console.log("mergedArray1 when arr1 is empty: ", mergedArray1([], arr2));
 console.log(
   "mergedArray1 when both the arrays are empty: ",
-  mergedArray([], [])
+  mergedArray1([], [])
 );
 console.log(
   "mergedArray1 when both the arrays are defined: ",
-  mergedArray(arr1, arr2)
+  mergedArray1(arr1, arr2)
 );
 
 //method2: using while loop:
@@ -55,6 +55,7 @@ console.log(
 // const arr2 = [4, 19, 26, 48, 51];
 
 function mergedArray2(array1, array2) {
+  let t1 = performance.now();
   // console.log(array1, array2);
 
   const mergedArray = [];
@@ -85,10 +86,17 @@ function mergedArray2(array1, array2) {
     }
   }
 
+  let t2 = performance.now();
+  console.log(
+    `time taken in execution of the function which uses while loop: ${
+      t2 - t1
+    } milliseconds.`
+  );
   return mergedArray;
 }
 
-// mergedArray2(arr1, arr2);
+mergedArray1(arr1, arr2);
+mergedArray2(arr1, arr2);
 console.log("mergedArray2 when arr1 is empty: ", mergedArray2([], arr2));
 console.log("mergedArray2 when arr2 is empty: ", mergedArray2(arr1, []));
 console.log(
