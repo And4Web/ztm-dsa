@@ -1,4 +1,4 @@
-//problem3:
+//problem2:
 //reverse a given string.
 
 //trick: whenever you have to do any action on strings, first convert that string into an array.

@@ -1,4 +1,4 @@
-//problem2:
+//problem1:
 //create an Array using class and constructor and implement the basic methods of arrays like push, pop, delete, shift etc.
 
 //this problem was demonstrated in section 6 lecture 5.
@@ -10,6 +10,9 @@ class MyArray {
     this.length = 0;
     this.data = {};
   }
+  get(index) {
+    return this.data[index];
+  }
   push(item) {
     this.data[this.length] = item;
     this.length++;
@@ -19,8 +22,20 @@ class MyArray {
     delete this.data[this.length - 1];
     this.length--;
   }
-  delete(index) {}
-  shiftItem() {}
+  delete(index) {
+    const deletedItem = this.data[index];
+    this.shiftLeft(index);
+
+    return deletedItem;
+  }
+
+  shiftLeft(index) {
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
+    this.length--;
+  }
 }
 const newArray = new MyArray();
 newArray.push("anand");
@@ -29,4 +44,7 @@ newArray.push("is");
 newArray.push("nice");
 newArray.pop();
 newArray.pop();
+newArray.delete(1);
+newArray.delete(2);
+newArray.delete(4);
 console.log(newArray);

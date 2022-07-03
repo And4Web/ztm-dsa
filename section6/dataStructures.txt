@@ -1,0 +1,10 @@
+ations that we perform with data structures:
+
+1. Insertion
+2. deletion
+3. traversal
+4. searching
+5. sorting
+6. access
+
+main and most important action among all of the above is access.

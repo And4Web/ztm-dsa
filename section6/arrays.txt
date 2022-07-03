@@ -1,0 +1,8 @@
+arrays are the best data structure if you just want to store data and iterate over it step by step. 
+
+Big O(time complexity) in arrays:
+
+lookup(access) - O(1)
+push - O(1)
+insert -O(n)
+delete - O(n)
