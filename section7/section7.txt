@@ -19,3 +19,7 @@
 
 
 -> in ES6, Maps and sets are introduced which can take key of any data type. Maps maintain insertion order. Map store key-value pair while Set only stores keys.
+
+-> Arrays vs Hash Tables:
+  lecture 9:
+  hash tables are very efficient in searching algorithms.
