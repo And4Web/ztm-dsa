@@ -23,7 +23,7 @@ function firstRecurringCharacter(input) {
 }
 
 // console.log(firstRecurringCharacter([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
-//the above solution has Big O = O(n^2).
+//the above solution has Big O = O(n^2), time complexity.
 
 //solution 2:
 
@@ -40,6 +40,8 @@ function firstRecurringCharacter2(input) {
   }
   return undefined;
 }
+
+//the above solution has Big O = O(n), time complexity.
 
 console.log(firstRecurringCharacter([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
 console.log(firstRecurringCharacter2([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
