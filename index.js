@@ -13,7 +13,7 @@
 function firstRecurringCharacter(input) {
   for (let i = 0; i < input.length; i++) {
     for (let j = i + 1; j < input.length; j++) {
-      console.log(input[i], input[j]);
+      // console.log(input[i], input[j]);
       if (input[i] === input[j]) {
         return input[i];
       }
@@ -22,5 +22,24 @@ function firstRecurringCharacter(input) {
   return undefined;
 }
 
-console.log(firstRecurringCharacter([3, 5, 2, 3, 5, 1, 2, 4]));
+// console.log(firstRecurringCharacter([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
 //the above solution has Big O = O(n^2).
+
+//solution 2:
+
+function firstRecurringCharacter2(input) {
+  let hashMap = {};
+
+  for (let i = 0; i < input.length; i++) {
+    if (hashMap[input[i]] !== undefined) {
+      return input[i];
+    } else {
+      hashMap[input[i]] = i;
+    }
+    // console.log(hashMap);
+  }
+  return undefined;
+}
+
+console.log(firstRecurringCharacter([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
+console.log(firstRecurringCharacter2([1, 3, 5, 2, 13, 15, 12, 7, 4, 7]));
