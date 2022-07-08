@@ -1,3 +1,5 @@
+//Singly linkedList:
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -44,10 +46,42 @@ class LinkedList {
     return array;
   }
 
-  insert(index, value) {}
+  insert(index, value) {
+    if (index >= this.length) {
+      return this.append(value);
+    }
 
-  delete(value) {
-    // this.length--;
+    let newNode = new Node(value);
+
+    const prevNode = this.traverseToIndex(index - 1);
+    const holdNextNode = prevNode.next;
+    prevNode.next = newNode;
+    newNode.next = holdNextNode;
+    this.length++;
+
+    return this;
+  }
+
+  traverseToIndex(index) {
+    let counter = 0;
+    let currentNode = this.head;
+    while (counter !== index) {
+      currentNode = currentNode.next;
+      counter++;
+    }
+    return currentNode;
+  }
+
+  delete(index) {
+    if (index >= this.length) {
+      return console.log(
+        "Enter a valid Index for removing a node from the list."
+      );
+    }
+    const prevNode = this.traverseToIndex(index - 1);
+    const unDesiredNode = prevNode.next;
+    prevNode.next = unDesiredNode.next;
+    this.length--;
     return this;
   }
 }
@@ -60,10 +94,14 @@ myLinkedList.append(16);
 myLinkedList.prepend(36);
 myLinkedList.prepend(6);
 // myLinkedList.append(76);
-myLinkedList.delete(36);
 myLinkedList.insert(3, 396);
-myLinkedList.insert(1, 56);
+myLinkedList.insert(1, 39);
+myLinkedList.insert(100, 56);
+myLinkedList.delete(2);
+myLinkedList.delete(3);
+myLinkedList.delete(30);
 
 console.log("my linkedList: ", myLinkedList);
 console.log("my Linked List: ", myLinkedList.printList());
-//lecture 12 onwards.
+
+//https://visualgo.net/en/list
