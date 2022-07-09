@@ -122,5 +122,6 @@ myLinkedList.delete(30);
 console.log("my linkedList: ", myLinkedList);
 console.log("my Linked List: ", myLinkedList.printList());
 console.log("reversed Linked List: ", myLinkedList.reverse().printList());
+//revisit the logic of the reversing the list.
 
 //https://visualgo.net/en/list
