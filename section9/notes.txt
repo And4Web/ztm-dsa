@@ -1,0 +1,21 @@
+-> Stacks and Queues: section 9:
+
+-> These are called Linear Data Structures. They    allow us to traverse through data sequentially, one by one.
+
+-> unlike an array, we can not access data randomly in stacks and queues. We can do operations only with data at the beginning or at the end of the data structure, like push, pop, peek etc.
+
+-> this is a higher level data structure. Array and Linked list are the lower level data structures. We need this higher level data structure to limit methods and operations on data.
+
+-> STACKS: -> data stacked on top of each other. LIFO. 
+ex: browser history stored in memory using stack concept.
+methods are: push, pop, peek.
+
+-> QUEUES: -> FIFO. 
+ex: any app that has waiting list like ticket booking app, use queue concept to store data.
+methods are: enqueue, dequeue, peek.
+
+-> using array to create a queue is quite inefficient. as we have seen earlier that in arrays removing elements from first postion needs unshifting which is a time consuming operation.
+
+-> for stacks both arrays and linkedlist works very well. but for queues we will use only linked lists.
+
+-> Arrays allows cache locality, which makes it faster when accessing its items in memory because they're right next to each other versus linked list, that has scattered them all over memory and also linked lists have extra memory associated with them because we have to hold on to those pointers. but on the other hand, they have more dynamic memory and we can keep adding things to the list versus an array where you have either a static array or a dynamic array that has a certain amount of memory and as soon as it's about to reach its limit it's going to have to double up their memory and create new space for it somewhere n memory.
