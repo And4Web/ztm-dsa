@@ -1,3 +1,5 @@
+// creating our first queue(FIFO) using linked list:
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -63,7 +65,7 @@ myQueue.enQueue("Shailesh");
 myQueue.enQueue("Chanchalesh");
 myQueue.deQueue();
 myQueue.deQueue();
-// myQueue.deQueue();
+myQueue.deQueue();
 
 console.log(myQueue);
 console.log("The Queue is: ", myQueue.printList());
