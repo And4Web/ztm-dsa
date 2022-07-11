@@ -1,0 +1,8 @@
+section 10: Trees:
+
+-> hierarichal data structure, unliike arrays or linkedlists which are linear. Treea can have zero or more child nodes.
+-> parent child relationship in unidirectional way.
+-> sub-trees.
+-> browser dom is a tree structure.
+-> linkedlist is a type of tree with just a single path.
+-> 
